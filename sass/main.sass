@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:100,300')
+
+@import vendor/animate
+
+*
+  box-sizing: border-box
+
+body
+  margin: 0
+  background-color: tomato
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f7f7f7' fill-opacity='0.25' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E")
+  text-align: center
+  font-size: 2rem
+  font-family: 'Libre Franklin', sans-serif
+  font-weight: 300
+  line-height: 1.45
+  color: rgba(0, 0, 0, .8)
+  height: 100vh
+  display: flex
+  align-items: center
+
+  @media (max-width: 800px)
+    font-size: 1.8rem
+  @media (max-width: 450px)
+    font-size: 1.25rem
+  @media (orientation: landscape) and (max-width: 700px)
+    display: block
+    font-size: 1.25rem
+
+.container
+  width: 85%
+  max-width: 900px
+  margin: 0 auto
+  background: white
+  padding: 2em
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5)
+  overflow: hidden
+
+h1
+  font-size: 6vmin
+  line-height: 0.9
+  margin: 0 0 .5em
+  text-transform: uppercase
+  font-weight: 100
+  letter-spacing: .25em
+
+
+  span
+    display: block
+    font-size: 35vmin
+    font-weight: 100
+    letter-spacing: normal
+
+  &::before,
+  &::after
+    content: ''
+    display: block
+    background: rgba(0, 0, 0, 0.8)
+    width: 100%
+    height: 3px
+  &::before
+    margin-bottom: .35em
+  &::after
+    margin-top: .35em
+    margin-bottom: 1em
+
+.bounceInUp
+  animation-delay: 1.5s
